@@ -1,5 +1,6 @@
 
 import gradio as gr
+from gradio.themes import Soft as SoftTheme
 import pickle
 import numpy as np
 from sklearn.datasets import load_breast_cancer
@@ -38,7 +39,8 @@ interface = gr.Interface(
     inputs=inputs,
     outputs=gr.JSON(label="Prediction Results"),
     title="Breast Cancer Classifier",
-    description="Enter 30 medical features to get predictions from SVM, KNN, Random Forest, and Decision Tree."
+    description="Enter 30 medical features to get predictions from SVM, KNN, Random Forest, and Decision Tree.",
+    theme=SoftTheme()
 )
 
 interface.launch()
