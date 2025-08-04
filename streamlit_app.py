@@ -22,7 +22,7 @@ def main():
     st.set_page_config(page_title="Breast Cancer Predictor", page_icon="♋", layout="wide")
 
     st.title("Breast Cancer Prediction")
-    st.write("Enter the patient's medical measurements to predict whether the diagnosis is malignant or benign. This app uses a Decision Tree Classifier.")
+    st.write("Enter the patient's medical measurements to predict whether the diagnosis is malignant or benign. This app uses Random Forest, KNN, Decision Tree and SVM.")
 
     # Load and prepare data
     data = load_data()
